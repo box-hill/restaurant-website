@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/box-hill/restaurant-website#readme",
   "devDependencies": {
+    "css-loader": "^6.3.0",
+    "style-loader": "^3.3.0",
     "webpack": "^5.55.1",
     "webpack-cli": "^4.8.0"
   }

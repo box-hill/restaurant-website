@@ -1,3 +1,20 @@
+
+//import SweetBuns from './sweet-buns.jpg';
+ 
 export default function renderFirstTab() {
-    console.log('hello from first-tab.js');
+    const content = document.getElementById('content');
+    
+    const topSection = document.createElement('div');
+    topSection.classList.add('top-banner');
+    content.appendChild(topSection);
+
+    const middleSection = document.createElement('div');
+    middleSection.classList.add('middle-section');
+    middleSection.innerHTML = 'BAKERY NOW OPEN';
+    content.appendChild(middleSection);
+    
+    const breadBackground = document.createElement('div');
+    breadBackground.classList.add('home-background');
+    content.appendChild(breadBackground);
 }
+
