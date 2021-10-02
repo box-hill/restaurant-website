@@ -1,4 +1,6 @@
 import renderFirstTab from './first-tab.js';
+import renderSecondTab from './second-tab.js';
+import renderThirdTab from './third-tab.js';
 import './style.css';
 
 const content = document.getElementById('content');
@@ -10,9 +12,14 @@ homeTab.addEventListener('click',()=>{
     removeAllChildNodes(content);
     renderFirstTab();
 });
-menuTab.addEventListener('click',()=>console.log('dude2'));
-contactTab.addEventListener('click',()=>console.log('dude3'));
-
+menuTab.addEventListener('click',()=>{
+    removeAllChildNodes(content);
+    renderSecondTab();
+});
+contactTab.addEventListener('click',()=>{
+    removeAllChildNodes(content);
+    renderThirdTab();
+});
 renderFirstTab();
 
 function removeAllChildNodes(parent){
