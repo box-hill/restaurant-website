@@ -13,8 +13,9 @@ export default function renderFirstTab() {
     middleSection.innerHTML = 'BAKERY NOW OPEN';
     content.appendChild(middleSection);
     
-    const breadBackground = document.createElement('div');
-    breadBackground.classList.add('home-background');
-    content.appendChild(breadBackground);
+    content.classList.add('content-background');
+    // const breadBackground = document.createElement('div');
+    // breadBackground.classList.add('home-background');
+    // content.appendChild(breadBackground);
 }
 

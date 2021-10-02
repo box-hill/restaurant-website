@@ -23,6 +23,7 @@ contactTab.addEventListener('click',()=>{
 renderFirstTab();
 
 function removeAllChildNodes(parent){
+    parent.removeAttribute('class');
     while(parent.firstChild){
         parent.removeChild(parent.firstChild);
     }
